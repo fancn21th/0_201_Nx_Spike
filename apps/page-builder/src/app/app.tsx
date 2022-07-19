@@ -1,16 +1,14 @@
 import { Route, Routes, Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import Card from './card';
 
 export function App() {
   return (
     <>
-      <Button variant="contained">你好，世界</Button>
+      <Card />
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}
-      <br />
       <hr />
-      <br />
       <div role="navigation">
         <ul>
           <li>
