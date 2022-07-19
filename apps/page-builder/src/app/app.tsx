@@ -1,15 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
 
 export function App() {
   return (
     <>
-      <NxWelcome title="page-builder" />
-      <div />
-
+      <Button variant="contained">你好，世界</Button>
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
       {/* Feel free to move and update them to fit your needs */}
