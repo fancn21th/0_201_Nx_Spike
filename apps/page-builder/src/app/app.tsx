@@ -2,11 +2,11 @@ import { Route, Routes, Link } from 'react-router-dom';
 import Card from './card';
 import { Header } from '@bigspur/page-builder/ui-shared';
 import { formatType } from '@bigspur/page-builder/util-formatters';
+import './app.scss';
 
 export function App() {
   return (
     <>
-      {formatType('number')}
       <Header />
       <Card />
       {/* START: routes */}
@@ -28,7 +28,7 @@ export function App() {
           path="/"
           element={
             <div>
-              This is the generated root route.{' '}
+              This is the generated root route. <h2>{formatType('number')}</h2>
               <Link to="/page-2">Click here for page 2.</Link>
             </div>
           }
