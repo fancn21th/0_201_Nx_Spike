@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { formatType } from '@bigspur/page-builder/util-formatters';
 import styles from './page-builder-feature-list-page.module.scss';
+import { Page } from '@bigspur/api/util-interfaces';
 
 /* eslint-disable-next-line */
 export interface PageBuilderFeatureListPageProps {}
@@ -9,9 +10,7 @@ export interface PageBuilderFeatureListPageProps {}
 export function PageBuilderFeatureListPage(
   props: PageBuilderFeatureListPageProps
 ) {
-  const [page, setPage] = useState({
-    title: '',
-  });
+  const [page, setPage] = useState<Page | null>(null);
   const params = useParams();
 
   useEffect(() => {
@@ -25,7 +24,7 @@ export function PageBuilderFeatureListPage(
 
   return (
     <div className={styles['container']}>
-      <h1>Welcome to {page.title} </h1>
+      <h1>Welcome to {page ? page.title : 'loading...'} </h1>
       <h2>{formatType('string')}</h2>
     </div>
   );
