@@ -78,6 +78,19 @@
         "jestConfig": "apps/page-builder/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "serve-all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "nx run page-builder:serve"
+          },
+          {
+            "command": "nx run api:serve"
+          }
+        ]
+      }
     }
   },
   "tags": []

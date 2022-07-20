@@ -9,7 +9,8 @@
     "graph": "nx dep-graph",
     "serve:f": "nx run page-builder:serve",
     "serve:b": "nx run api:serve",
-    "serve:fb": "nx run-many --target=serve --projects=page-builder,api --parallel=true"
+    "serve:fb": "nx run-many --target=serve --projects=page-builder,api --parallel=true",
+    "serve:fb2": "nx run page-builder:serve-all"
   },
   "private": true,
   "dependencies": {
