@@ -6,7 +6,10 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "graph": "nx dep-graph"
+    "graph": "nx dep-graph",
+    "serve:f": "nx run page-builder:serve",
+    "serve:b": "nx run api:serve",
+    "serve:fb": "nx run-many --target=serve --projects=page-builder,api --parallel=true"
   },
   "private": true,
   "dependencies": {
