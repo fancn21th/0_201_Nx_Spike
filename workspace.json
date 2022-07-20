@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "page-builder": "apps/page-builder",
-    "page-builder-e2e": "apps/page-builder-e2e"
+    "page-builder-e2e": "apps/page-builder-e2e",
+    "page-builder-ui-shared": "libs/page-builder/ui-shared"
   }
 }

@@ -1,9 +1,11 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import Card from './card';
+import { Header } from '@bigspur/page-builder/ui-shared';
 
 export function App() {
   return (
     <>
+      <Header />
       <Card />
       {/* START: routes */}
       {/* These routes and navigation have been generated for you */}
