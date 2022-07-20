@@ -16,7 +16,7 @@ export function App() {
       .then((res) => {
         setPages(res);
       });
-  });
+  }, []);
 
   return (
     <>
