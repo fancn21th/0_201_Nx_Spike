@@ -1,4 +1,4 @@
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Card from './card';
 import { Header } from '@bigspur/page-builder/ui-shared';
 import { formatType } from '@bigspur/page-builder/util-formatters';
@@ -10,48 +10,24 @@ export function App() {
   return (
     <>
       <Header />
-      <Card />
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <hr />
-      <div role="navigation">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/feature-list-page">PageBuilderFeatureListPage</Link>
-          </li>
-          <li>
-            <Link to="/page-2">Page 2</Link>
-          </li>
-        </ul>
+      <h2>{formatType('number')}</h2>
+      <div
+        style={{
+          display: 'flex',
+          marginTop: '1rem',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Card />
       </div>
+
       <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              This is the generated root route. <h2>{formatType('number')}</h2>
-              <Link to="/page-2">Click here for page 2.</Link>
-            </div>
-          }
-        />
         <Route
           path="/feature-list-page"
           element={<PageBuilderFeatureListPage />}
         />
-        <Route
-          path="/page-2"
-          element={
-            <div>
-              <Link to="/">Click here to go back to root page.</Link>
-            </div>
-          }
-        />
       </Routes>
-      {/* END: routes */}
     </>
   );
 }
