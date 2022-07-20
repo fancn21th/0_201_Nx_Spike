@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bigspur/api/util-interfaces": ["libs/api/util-interfaces/src/index.ts"],
       "@bigspur/page-builder/feature-list-page": [
         "libs/page-builder/feature-list-page/src/index.ts"
       ],

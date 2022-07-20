@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "api-util-interfaces": "libs/api/util-interfaces",
     "page-builder": "apps/page-builder",
     "page-builder-e2e": "apps/page-builder-e2e",
     "page-builder-feature-list-page": "libs/page-builder/feature-list-page",
