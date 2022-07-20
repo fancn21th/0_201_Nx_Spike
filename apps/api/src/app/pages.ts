@@ -1,14 +1,16 @@
-const pages = [
+import { Page, PageType } from '@bigspur/api/util-interfaces';
+
+const pages: Page[] = [
   {
     id: '1',
     title: 'Page A',
-    type: 'List',
+    type: PageType.List,
     cover: '/assets/contemplative-reptile.png',
   },
   {
     id: '2',
     title: 'Page B',
-    type: 'Form',
+    type: PageType.Form,
     cover: '/assets/contemplative-reptile.png',
   },
 ];
