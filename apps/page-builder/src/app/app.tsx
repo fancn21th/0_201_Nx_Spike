@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Link } from 'react-router-dom';
 import Page from './page';
 import { Header } from '@bigspur/page-builder/ui-shared';
 import { formatType } from '@bigspur/page-builder/util-formatters';
@@ -31,15 +31,14 @@ export function App() {
         }}
       >
         {pages.map((page: any) => (
-          <Page key={page.id} title={page.title} type={page.type} />
+          <Link to={`/pages/${page.id}`} key={page.id}>
+            <Page title={page.title} type={page.type} />
+          </Link>
         ))}
       </div>
 
       <Routes>
-        <Route
-          path="/feature-list-page"
-          element={<PageBuilderFeatureListPage />}
-        />
+        <Route path="/pages/:id" element={<PageBuilderFeatureListPage />} />
       </Routes>
     </>
   );
