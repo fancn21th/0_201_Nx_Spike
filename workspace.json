@@ -4,6 +4,7 @@
   "projects": {
     "page-builder": "apps/page-builder",
     "page-builder-e2e": "apps/page-builder-e2e",
-    "page-builder-ui-shared": "libs/page-builder/ui-shared"
+    "page-builder-ui-shared": "libs/page-builder/ui-shared",
+    "page-builder-util-formatters": "libs/page-builder/util-formatters"
   }
 }

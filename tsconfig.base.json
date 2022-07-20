@@ -17,6 +17,9 @@
     "paths": {
       "@bigspur/page-builder/ui-shared": [
         "libs/page-builder/ui-shared/src/index.ts"
+      ],
+      "@bigspur/page-builder/util-formatters": [
+        "libs/page-builder/util-formatters/src/index.ts"
       ]
     }
   },

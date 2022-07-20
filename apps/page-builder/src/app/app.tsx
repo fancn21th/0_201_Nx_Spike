@@ -1,10 +1,12 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import Card from './card';
 import { Header } from '@bigspur/page-builder/ui-shared';
+import { formatType } from '@bigspur/page-builder/util-formatters';
 
 export function App() {
   return (
     <>
+      {formatType('number')}
       <Header />
       <Card />
       {/* START: routes */}
