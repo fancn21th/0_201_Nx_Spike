@@ -4,6 +4,8 @@ import { Header } from '@bigspur/page-builder/ui-shared';
 import { formatType } from '@bigspur/page-builder/util-formatters';
 import './app.scss';
 
+import { PageBuilderFeatureListPage } from '@bigspur/page-builder/feature-list-page';
+
 export function App() {
   return (
     <>
@@ -19,6 +21,9 @@ export function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/feature-list-page">PageBuilderFeatureListPage</Link>
+          </li>
+          <li>
             <Link to="/page-2">Page 2</Link>
           </li>
         </ul>
@@ -32,6 +37,10 @@ export function App() {
               <Link to="/page-2">Click here for page 2.</Link>
             </div>
           }
+        />
+        <Route
+          path="/feature-list-page"
+          element={<PageBuilderFeatureListPage />}
         />
         <Route
           path="/page-2"

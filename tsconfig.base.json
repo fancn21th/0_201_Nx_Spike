@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@bigspur/page-builder/feature-list-page": [
+        "libs/page-builder/feature-list-page/src/index.ts"
+      ],
       "@bigspur/page-builder/ui-shared": [
         "libs/page-builder/ui-shared/src/index.ts"
       ],
