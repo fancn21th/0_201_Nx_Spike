@@ -11,7 +11,8 @@
     "serve:b": "nx run api:serve",
     "serve:fb": "nx run-many --target=serve --projects=page-builder,api --parallel=true",
     "serve:fb2": "nx run page-builder:serve-all",
-    "e2e": "nx run page-builder-ui-shared-e2e:e2e --watch"
+    "e2e": "nx run page-builder-ui-shared-e2e:e2e --watch",
+    "build:f": "nx build page-builder --configuration=production"
   },
   "private": true,
   "dependencies": {
