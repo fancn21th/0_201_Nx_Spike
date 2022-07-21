@@ -24,6 +24,7 @@ export function App() {
       <Header />
       <h2>{formatType('number')}</h2>
       <div
+        data-testid="app-container"
         style={{
           display: 'flex',
           marginTop: '1rem',
