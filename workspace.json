@@ -8,6 +8,7 @@
     "page-builder-e2e": "apps/page-builder-e2e",
     "page-builder-feature-list-page": "libs/page-builder/feature-list-page",
     "page-builder-ui-shared": "libs/page-builder/ui-shared",
+    "page-builder-ui-shared-e2e": "apps/page-builder-ui-shared-e2e",
     "page-builder-util-formatters": "libs/page-builder/util-formatters"
   }
 }
